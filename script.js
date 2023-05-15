@@ -102,7 +102,7 @@ holdBtn.addEventListener('click', () => {
       imageDice.classList.add('hidden');
     } else {
       // switching player
-      switchPlayer();
+      currentScore > 0 ? switchPlayer() : null;
     }
   }
 });
